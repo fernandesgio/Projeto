@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Informe um número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        bool pertence = Fibonacci(numero);
+        Console.WriteLine(pertence ? "O número pertence à sequência de Fibonacci." : "O número não pertence à sequência de Fibonacci.");
+    }
+
+    static bool Fibonacci(int n)
+    {
+        int a = 0, b = 1;
+        while (a < n)
+        {
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }
+        return a == n;
+    }
+}
