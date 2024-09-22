@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double[] faturamento = { 67000, 36000, 29000, 27000, 0, 40000, 50000 };
+        double menor = double.MaxValue, maior = double.MinValue, soma = 0;
+        int diasComFaturamento = 0;
+
+        foreach (var valor in faturamento)
+        {
+            if (valor > 0)
+            {
+                if (valor < menor) menor = valor;
+                if (valor > maior) maior = valor;
+                soma += valor;
+                diasComFaturamento++;
+            }
+        }
+
+        double media = soma / diasComFaturamento;
+        int diasAcimaMedia = 0;
+
+        foreach (var valor in faturamento)
+        {
+            if (valor > media)
+            {
+                diasAcimaMedia++;
+            }
+        }
+
+        Console.WriteLine($"Menor faturamento: {menor}");
+        Console.WriteLine($"Maior faturamento: {maior}");
+        Console.WriteLine($"Dias acima da média: {diasAcimaMedia}");
+    }
+}
