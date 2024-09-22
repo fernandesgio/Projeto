@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double[] faturamento = { 67836.43, 36678.66, 29229.88, 27165.48, 19849.53 };
+        double total = 0;
+
+        foreach (var valor in faturamento)
+        {
+            total += valor;
+        }
+
+        string[] estados = { "SP", "RJ", "MG", "ES", "Outros" };
+
+        for (int i = 0; i < faturamento.Length; i++)
+        {
+            double percentual = (faturamento[i] / total) * 100;
+            Console.WriteLine($"Percentual de {estados[i]}: {percentual:F2}%");
+        }
+    }
+}
