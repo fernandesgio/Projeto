@@ -1,6 +1,6 @@
-# Projetos de C# - Estágio na Target Systems
+# Projetos de C# - Estágio na Target Sistemas
 
-Este repositório contém uma coleção de exercícios em C# que foram desenvolvidos como parte da minha oportunidade de estágio na Target Systems. Os projetos abordam conceitos fundamentais da programação, como loops, condições, manipulação de strings e operações com arrays.
+Este repositório contém uma coleção de exercícios em C# que foram desenvolvidos como parte da minha oportunidade de estágio na Target Sistemas. Os projetos abordam conceitos fundamentais da programação, como loops, condições, manipulação de strings e operações com arrays.
 
 ## Exercícios
 
